@@ -3,7 +3,6 @@ from engine import Value
 
 class Module:
 
-    # to set gradients to null (and prevent gradient accumulation)
     def zero_grad(self):
         for p in self.parameters():
             p.grad = 0
